@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kitchen Multi Timer 隱私權政策草稿。只記載目前已知的本機資料與本機通知。">
+  <meta name="theme-color" content="#F7F3EB">
+  <meta property="og:site_name" content="Kitchen Multi Timer">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_Hant">
+  <meta property="og:title" content="隱私權政策 — Kitchen Multi Timer">
+  <meta property="og:description" content="Kitchen Multi Timer 隱私權政策草稿。只記載目前已知的本機資料與本機通知。">
+  <meta property="og:url" content="https://ryouki1897.github.io/privacy.html">
+  <meta property="og:image" content="https://ryouki1897.github.io/assets/logo-512.png">
+  <meta property="og:image:alt" content="Kitchen Multi Timer 標誌">
+  <meta property="og:image:width" content="512">
+  <meta property="og:image:height" content="512">
+  <link rel="canonical" href="https://ryouki1897.github.io/privacy.html">
+  <title>隱私權政策 — Kitchen Multi Timer</title>
+  <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>
+    try {
+      var kmtLang = localStorage.getItem("kitchen-multi-timer-language");
+      if (kmtLang === "en" || kmtLang === "ja") {
+        document.documentElement.classList.add("i18n-wait");
+      }
+    } catch (e) {}
+  </script>
+</head>
+<body data-page="privacy">
+  <a class="skip" href="#content" data-i18n="skip">跳到主要內容</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="index.html">
+        <picture>
+          <source srcset="assets/logo-512.webp" type="image/webp">
+          <img src="assets/logo-512.png" width="40" height="40" alt="">
+        </picture>
+        <span class="brand-name">Kitchen Multi Timer</span>
+      </a>
+      <div class="lang-switch" role="group" data-i18n-aria="nav.langLabel" aria-label="語言">
+        <button type="button" data-lang="zh-Hant" lang="zh-Hant" aria-pressed="true">繁體中文</button>
+        <button type="button" data-lang="en" lang="en" aria-pressed="false">English</button>
+        <button type="button" data-lang="ja" lang="ja" aria-pressed="false">日本語</button>
+      </div>
+      <nav class="site-nav" data-i18n-aria="nav.menuLabel" aria-label="主要">
+        <a href="index.html" data-i18n="nav.home">首頁</a>
+        <a href="privacy.html" aria-current="page" data-i18n="nav.privacy">隱私權政策</a>
+        <a href="support.html" data-i18n="nav.support">支援</a>
+      </nav>
+    </div>
+  </header>
+  <main id="content">
+    <article class="shell prose">
+      <header class="page-head">
+        <p class="kicker" data-i18n="privacy.kicker">草稿</p>
+        <h1 data-i18n="privacy.heading">隱私權政策</h1>
+        <p class="lead" data-i18n="privacy.updated">草稿日期：2026年11月6日</p>
+      </header>
+      <div class="callout">
+        <p data-i18n="privacy.draftBanner">這是可編輯的草稿，送出作為 App Store 隱私權政策網址之前需要再審一次。這裡只寫目前已知的實作。尚未整合、尚未核對的項目會標出來，不會把計畫寫成已經發生的事。</p>
+      </div>
+
+      <h2 data-i18n="privacy.scopeTitle">這份草稿涵蓋什麼</h2>
+      <p data-i18n="privacy.scopeBody">涵蓋 Kitchen Multi Timer App，以及這個官方網站。沒有寫開發者或公司的正式名稱，因為這個名稱還沒有提供。</p>
+
+      <h2 data-i18n="privacy.operatorTitle">開發者</h2>
+      <dl class="blanks">
+        <div class="blank">
+          <dt data-i18n="privacy.operatorLabel">開發者或營運者名稱</dt>
+          <dd>
+            <strong data-i18n="common.toBeFilled">待填寫</strong>
+            <span data-i18n="privacy.operatorHint">尚未提供。確定名稱之前，這裡保持空白，不使用代稱。</span>
+          </dd>
+        </div>
+        <div class="blank">
+          <dt data-i18n="privacy.contactLabel">聯絡方式</dt>
+          <dd>
+            <a href="mailto:ryouki1897@gmail.com">ryouki1897@gmail.com</a>
+            <span data-i18n="privacy.contactHint">隱私權與支援使用這個信箱。</span>
+          </dd>
+        </div>
+      </dl>
+
+      <h2 data-i18n="privacy.nowTitle">目前已實作</h2>
+      <p data-i18n="privacy.nowLead">以下對應目前的 App 與這個網站。這不是對手機系統每一項服務的完整稽核。</p>
+      <h3 data-i18n="privacy.localTitle">存在裝置上的資料</h3>
+      <p data-i18n="privacy.localBody">計時範本、顏色與設定存在這台裝置上。以目前已知的實作，這些資料不靠開發者的伺服器保存，也沒有帳號或跨裝置同步。手機系統自己如何備份 App 資料，不在這份草稿的範圍。</p>
+      <h3 data-i18n="privacy.noticeTitle">本機通知</h3>
+      <p data-i18n="privacy.noticeBody">App 使用本機通知，在倒數結束時提醒。通知內容是該筆計時的名稱，以及目前語言的完成訊息。通知是否出現，取決於系統權限與裝置設定。這份草稿不保證每一台裝置都會提醒，也不描述作業系統如何處理通知。</p>
+      <h3 data-i18n="privacy.siteTitle">這個網站</h3>
+      <p data-i18n="privacy.siteBody">這個網站是靜態檔案，讀不到 App 裡的計時、顏色或設定。網站不使用 Cookie，也不載入 Google Analytics、廣告 SDK 或其他分析工具。你若在網站上選擇語言，這個選擇會存在這台瀏覽器的本地儲存（localStorage），鍵名是 kitchen-multi-timer-language，值只會是 zh-Hant、en 或 ja。只用來讓下次開啟時沿用同一種語言，不會送到伺服器。這份草稿沒有描述主機代管方的紀錄；網站正式公開時，那一部分需要另外審。</p>
+
+      <h2 data-i18n="privacy.absentTitle">目前沒有的功能</h2>
+      <p data-i18n="privacy.absentBody">目前尚未整合 AdMob，App 沒有加入廣告 SDK。因此這裡沒有廣告識別碼、廣告合作夥伴或跨 App 追蹤可以記載。</p>
+
+      <h2 data-i18n="privacy.futureTitle">未來可能的變更</h2>
+      <p data-i18n="privacy.futureBody">未來可能加入廣告服務。在廣告實際接入並核對之前，這只是計畫，不是現在的行為。</p>
+
+      <h2>
+        <span data-i18n="privacy.adsTitle">廣告</span>
+      </h2>
+      <div class="callout callout-pending">
+        <p class="ads-badge" data-i18n="privacy.adsBadge">待 AdMob 整合後審核</p>
+        <p data-i18n="privacy.adsBody">這一節故意還沒有寫完。等廣告 SDK 真正加入之後，必須依照當時核對過的資料處理方式改寫，並在公開前再審一次。在那之前，不要把本頁讀成廣告資料蒐集的說明。現在沒有廣告 SDK，所以沒有可記載的廣告資料處理。</p>
+      </div>
+
+      <h2 data-i18n="privacy.limitsTitle">這份草稿沒有主張的事</h2>
+      <ul>
+        <li data-i18n="privacy.limits1">沒有記載公司名稱或地址，因為這些還沒有提供。聯絡信箱寫在上方。</li>
+        <li data-i18n="privacy.limits2">沒有記載保存期限、法律依據、跨境傳輸或帳號刪除流程，因為這些事實還沒有建立。</li>
+        <li data-i18n="privacy.limits3">沒有主張作業系統、App Store 或未來的 SDK 不會處理任何資料。</li>
+        <li data-i18n="privacy.limits4">沒有主張每一台裝置的通知都已經驗證會送達。</li>
+      </ul>
+
+      <h2 data-i18n="privacy.changesTitle">之後若有變更</h2>
+      <p data-i18n="privacy.changesBody">App 或這個網站如果改變了儲存或傳送的資料，本頁要一起改。廣告那一節在 AdMob 整合完成並審過之前，維持「待審核」。</p>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <p class="footer-brand">Kitchen Multi Timer</p>
+      <p data-i18n="footer.note">這是靜態官方網站，不使用 Cookie 追蹤或分析工具。</p>
+      <p class="footer-links">
+        <a href="privacy.html" data-i18n="nav.privacy">隱私權政策</a>
+        <a href="support.html" data-i18n="nav.support">支援</a>
+      </p>
+    </div>
+  </footer>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/site.js"></script>
+</body>
+</html>
