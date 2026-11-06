@@ -36,17 +36,17 @@ python3 -m http.server 8080
 | 項目 | 內容 |
 | --- | --- |
 | GitHub 帳號 | Ryouki1897 |
-| 儲存庫名稱 | `Ryouki1897.github.io` |
-| 網站網址 | https://ryouki1897.github.io/ |
+| 儲存庫名稱 | `kitchen-multi-timer-website` |
+| 網站網址 | https://ryouki1897.github.io/kitchen-multi-timer-website/ |
 | 支援與隱私權信箱 | ryouki1897@gmail.com |
 
-這是 GitHub 使用者網站，發布在網域根路徑。正式頁面是：
+這是 GitHub 專案網站，發布在帳號網域下的儲存庫路徑。儲存庫名稱維持 `kitchen-multi-timer-website`。正式頁面是：
 
-- https://ryouki1897.github.io/
-- https://ryouki1897.github.io/privacy.html
-- https://ryouki1897.github.io/support.html
+- https://ryouki1897.github.io/kitchen-multi-timer-website/
+- https://ryouki1897.github.io/kitchen-multi-timer-website/privacy.html
+- https://ryouki1897.github.io/kitchen-multi-timer-website/support.html
 
-三頁已寫入對應的 `canonical` 與 `og:url`。`og:image` 使用 https://ryouki1897.github.io/assets/logo-512.png 。頁面之間的連結與 CSS、JavaScript、圖示仍是相對路徑。
+三頁已寫入對應的 `canonical` 與 `og:url`。`og:image` 使用 https://ryouki1897.github.io/kitchen-multi-timer-website/assets/logo-512.png 。頁面之間的連結與 CSS、JavaScript、圖示使用相對路徑，所以在這個子路徑下會連到同一個網站，不會跳到 `https://ryouki1897.github.io/` 的根目錄。
 
 ## GitHub Pages
 
@@ -54,27 +54,25 @@ python3 -m http.server 8080
 
 發布時：
 
-1. 把這個網站放進名為 `Ryouki1897.github.io` 的儲存庫。不要把 Flutter App 放進同一個網站儲存庫。
-2. 推送到 GitHub 的預設分支。根目錄必須有 `index.html` 與 `.nojekyll`。
+1. 網站放在名為 `kitchen-multi-timer-website` 的儲存庫。不要改這個名稱，也不要把 Flutter App 放進同一個網站儲存庫。
+2. 推送到 GitHub 的預設分支。儲存庫根目錄必須有 `index.html` 與 `.nojekyll`。
 3. 在儲存庫的 Settings → Pages，選 Deploy from a branch。
-4. Branch 選預設分支，資料夾選 `/ (root)`，然後儲存。
-5. 部署完成後，首頁是 https://ryouki1897.github.io/ 。
-6. 確認 `/`、`/privacy.html`、`/support.html`、`/favicon.ico` 與 `assets/` 都開得了。
-7. 開發者或營運者名稱補上，隱私權草稿再審一次之後，才把 `https://ryouki1897.github.io/privacy.html` 填進 App Store。
-
-不要把這個網站發布成其他儲存庫底下的 project site。那樣網址會變成 `https://ryouki1897.github.io/<其他儲存庫>/`，與已寫入的 canonical、Open Graph 網址不同，也不能當作 AdMob 要的網域根路徑。
+4. Branch 選預設分支，資料夾選 `/ (root)`，然後儲存。這裡的 `/ (root)` 是儲存庫根目錄，網站網址仍會帶儲存庫名稱。
+5. 部署完成後，首頁是 https://ryouki1897.github.io/kitchen-multi-timer-website/ 。
+6. 確認首頁、`privacy.html`、`support.html`、`favicon.ico` 與 `assets/` 都開得了，而且網址都留在 `/kitchen-multi-timer-website/` 底下。
+7. 開發者或營運者名稱補上，隱私權草稿再審一次之後，才把 `https://ryouki1897.github.io/kitchen-multi-timer-website/privacy.html` 填進 App Store。
 
 ## 日後加入 app-ads.txt
 
 現在不要建立 `app-ads.txt`。沒有 AdMob 提供的正式內容時，不放佔位檔，也不要自填 publisher ID。
 
-這個網站預定發布在 https://ryouki1897.github.io/ 。屆時檔案網址會是 https://ryouki1897.github.io/app-ads.txt ，這是該網域的根路徑。
+AdMob 會到開發者網站的網域根目錄找這個檔，也就是 `https://ryouki1897.github.io/app-ads.txt`。現在的正式網站在 `https://ryouki1897.github.io/kitchen-multi-timer-website/`，這個子路徑不是網域根目錄。把檔案放在這個儲存庫裡，公開網址會是 `https://ryouki1897.github.io/kitchen-multi-timer-website/app-ads.txt`，AdMob 不會把它當成網域根目錄的檔案。
 
 整合並核對 AdMob 之後：
 
 1. 從 AdMob 取得 `app-ads.txt` 的正式內容。只使用 AdMob 給的那幾行。
 2. 在這個儲存庫根目錄、與 `index.html` 同一層，新增名為 `app-ads.txt` 的純文字檔。
-3. 推送後，用瀏覽器打開 https://ryouki1897.github.io/app-ads.txt ，確認回應是純文字。
+3. 推送後確認檔案出現在網域根目錄。以目前這個專案網站來說，儲存庫裡的檔案不會出現在 `https://ryouki1897.github.io/app-ads.txt`。要給 AdMob 用時，需要另外的使用者網站或自訂網域，讓檔案位於該網域的根路徑。
 4. 在 AdMob 查看抓取狀態。
 5. 同一次變更裡審閱 `privacy.html` 的廣告節。核對完成之前，保留「待 AdMob 整合後審核」。
 

@@ -107,3 +107,32 @@
 - 隱私權草稿還沒有做法律審閱。
 - 儲存庫與 GitHub Pages 還沒有建立或發布。
 - `app-ads.txt` 仍不建立。預定發布後，它的位置會是 `https://ryouki1897.github.io/app-ads.txt`。
+
+## 正式網址改為專案子路徑
+
+日期：2026-11-06
+
+狀態：網站已發布在 `https://ryouki1897.github.io/kitchen-multi-timer-website/`。canonical、`og:url` 與 `og:image` 已改到這個子路徑。儲存庫名稱維持 `kitchen-multi-timer-website`。沒有 commit，沒有 push，沒有改 Flutter App，沒有建立 `app-ads.txt`。
+
+### 實際完成
+
+- 首頁 canonical 與 `og:url` 改為 `https://ryouki1897.github.io/kitchen-multi-timer-website/`。
+- 隱私權頁改為 `https://ryouki1897.github.io/kitchen-multi-timer-website/privacy.html`。
+- 支援頁改為 `https://ryouki1897.github.io/kitchen-multi-timer-website/support.html`。
+- 三頁 `og:image` 改為 `https://ryouki1897.github.io/kitchen-multi-timer-website/assets/logo-512.png`。
+- `README.md` 的正式網址、儲存庫名稱與 Pages 說明改成這個專案網站。AdMob 要的 `app-ads.txt` 仍是網域根目錄 `https://ryouki1897.github.io/app-ads.txt`，不是這個子路徑。
+- CSS、JavaScript、圖片與頁面連結維持相對路徑。
+
+### 這次檢查
+
+- 已上線的首頁、`privacy.html`、`support.html`、`assets/css/styles.css`、`assets/js/i18n.js`、`assets/js/site.js`、`assets/logo-512.png`、`assets/logo-512.webp`、`assets/favicon-32.png`、`favicon.ico` 都是 200，網址留在 `/kitchen-multi-timer-website/`。
+- 已上線版本的 canonical、`og:url` 與 `og:image` 仍指向 `https://ryouki1897.github.io/` 根目錄。那些根目錄網址目前是 404。這次的網址修正還在本機，尚未推上。
+- `https://ryouki1897.github.io/kitchen-multi-timer-website/app-ads.txt` 是 404。`https://ryouki1897.github.io/` 也是 404。
+- 本機以 `http://127.0.0.1:8766/kitchen-multi-timer-website/` 預覽修改後的檔案。首頁樣式已載入，背景色是 `rgb(247, 243, 235)`，Logo 是子路徑下的 `assets/logo-512.webp`，512×512。
+- 從首頁進隱私權頁，再進支援頁，網址分別停在子路徑的 `privacy.html` 與 `support.html`。三頁的 canonical、`og:url`、`og:image` 都是上面的正式網址。
+
+### 尚未完成
+
+- 這次網址修正需要推上 `kitchen-multi-timer-website` 之後，已上線頁面的 canonical 與 Open Graph 才會換成子路徑。
+- 開發者或營運者名稱、真實截圖、App Store 網址、隱私權草稿審閱仍未完成。
+- `app-ads.txt` 仍不建立。放在這個專案網站裡不會出現在網域根目錄。
