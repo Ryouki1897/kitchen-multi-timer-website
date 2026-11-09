@@ -69,18 +69,19 @@
       <h2 data-i18n="support.createTitle">如何建立計時器</h2>
       <ol>
         <li data-i18n="support.create1">點首頁上的一張快捷卡片，會用那個範本立刻開始一筆獨立計時。</li>
-        <li data-i18n="support.create2">要做新的時間：管理選單 → 計時器，點右下角的加號，輸入名稱、分、秒，選好顏色後儲存。新範本預設不會出現在首頁。</li>
+        <li data-i18n="support.create2">要新增範本：管理選單 → 計時器，點右下角的加號，輸入名稱、分、秒，選好顏色與提示音後儲存。新範本不會出現在首頁。已經有四個範本時不能再新增，要先刪掉不是快捷的範本。</li>
         <li data-i18n="support.create3">在計時範本列表按開始計時（播放圖示），也會開始一筆獨立計時。同一個範本可以重複開始，每一筆各自倒數。</li>
         <li data-i18n="support.create4">時間必須大於 0。名稱不能是空白。</li>
       </ol>
 
       <h2 data-i18n="support.templatesTitle">如何使用範本與快捷</h2>
       <ol>
-        <li data-i18n="support.templates1">範本保存名稱、時間與顏色。快捷是被放到首頁的範本，最多 6 個。</li>
-        <li data-i18n="support.templates2">在管理快捷裡，可以把範本加到首頁，或從首頁移除。從首頁移除不會刪除範本。</li>
-        <li data-i18n="support.templates3">編輯範本只影響之後新開始的計時。已經在跑或暫停的計時，仍使用開始當下的名稱、秒數與顏色。</li>
-        <li data-i18n="support.templates4">刪除範本時，在該列向左滑，點刪除後再確認。只滑開或按取消，都不會刪除。已經開始的計時不會因為範本被刪而消失。</li>
+        <li data-i18n="support.templates1">全新安裝有四個範本：溏心蛋、水煮蛋（全熟）、泡麵、1 分鐘。範本保存名稱、時間、顏色與提示音。一開始的範本額度是四個。額度內可以新增、編輯與刪除；已經有四個時不能再新增。</li>
+        <li data-i18n="support.templates2">刪除不是首頁快捷的範本之後，可以再新增，直到回到四個。首頁快捷正在使用的範本不能刪除。刪除時在該列向左滑，點刪除後再確認。只滑開或按取消都不會刪除。已經開始的計時不會因為範本被刪而消失。</li>
+        <li data-i18n="support.templates3">全新安裝的首頁有兩個快捷：溏心蛋、水煮蛋（全熟）。這個版本不能新增、移除或替換快捷，可以在管理快捷裡調整現有快捷的順序。</li>
+        <li data-i18n="support.templates4">可以編輯快捷對應範本的名稱、時間、顏色與提示音。編輯只影響之後新開始的計時。已經在跑或暫停的計時，仍使用開始當下的名稱、時間、顏色與提示音。</li>
         <li data-i18n="support.templates5">顏色用來分辨不同計時。可以在管理選單的顏色裡新增或修改。正在使用的顏色要先改到另一個顏色，才能刪除。</li>
+        <li data-i18n="support.templates6">這個版本不顯示廣告，也沒有觀看廣告來增加範本額度的功能。</li>
       </ol>
 
       <h2 data-i18n="support.controlsTitle">如何暫停、恢復與取消</h2>
@@ -89,20 +90,21 @@
         <li data-i18n="support.controls2">取消單筆進行中或暫停的計時：在該張卡片向左滑，露出刪除後再點刪除。只滑開不會刪除。刪除會一併取消該筆尚未響起的通知。</li>
         <li data-i18n="support.controls3">時間到的計時會留在清單上方，並可閃爍提醒。點右側的勾勾確認完成後才移除。若設定裡開啟「一次清除所有已完成計時」，確認其中一筆會一併清掉其他已完成的計時；進行中與暫停的不受影響。</li>
         <li data-i18n="support.controls4">設定裡的「停止所有計時」會再詢問一次。確認後會刪除所有計時，並取消尚未響起的通知。</li>
+        <li data-i18n="support.controls5">可以同時執行多筆獨立計時。完成時播放該筆的提示音，並安排一則本機通知。提示音有八種內建選擇。</li>
       </ol>
 
       <h2 data-i18n="support.notifyTitle">通知沒有出現時</h2>
-      <p data-i18n="support.notifyLead">先分清楚 App 在前景還是背景。App 正開在畫面上時，完成提醒主要是清單上方的完成卡與提醒音。App 在背景或鎖定時，才是系統的本機通知響一次。</p>
+      <p data-i18n="support.notifyLead">先分清楚 App 在前景還是背景。App 正開在畫面上時，完成提醒主要是清單上方的完成卡與提醒音。App 在背景或鎖定時，由系統的本機通知提醒。靜音開關或專注模式可能讓它不發聲。</p>
       <ol>
         <li data-i18n="support.notify1">打開 App 的設定，查看通知權限。若未允許，依照畫面上的說明到系統設定開啟通知，再回到 App 按重新檢查。</li>
         <li data-i18n="support.notify2">Android 若顯示無法使用精確鬧鐘，背景提醒可能不會準時。請到系統設定允許精確鬧鐘，再回 App 重新檢查。</li>
         <li data-i18n="support.notify3">若出現「提醒尚未排程成功，將在下次同步再試。」，先不要刪掉該筆計時。留在 App 內等下一輪同步，或把 App 切到背景再打開。</li>
         <li data-i18n="support.notify4">iPhone 第一次開啟時，請在系統詢問裡允許通知。選不允許時，背景可能不會響。</li>
-        <li data-i18n="support.notify5">也請檢查勿擾、專注模式，以及系統是否把這個 App 的通知關掉。</li>
+        <li data-i18n="support.notify5">也請檢查靜音開關、勿擾、專注模式，以及系統是否把這個 App 的通知關掉。</li>
         <li data-i18n="support.notify6">權限已開但仍然沒有提醒時，這份說明無法代替實機檢查。不同系統的表現不一定相同。</li>
       </ol>
       <p data-i18n="support.notifyAuto">設定裡可以開啟「提醒音自動停止」，並選擇 10、20、30、60 或 120 秒。預設不會自動停止，要確認完成才停。這個秒數不影響背景那一次系統通知。完成卡仍會留著。</p>
-      <p data-i18n="support.notifyLimit">以上是基本檢查。這個網站不保證每一台裝置都會準時響起。</p>
+      <p data-i18n="support.notifyLimit">以上是基本檢查。這個網站不保證每一台裝置都會準時響起，也不保證 iOS 靜音或專注模式下一定會發聲。</p>
 
       <h2 data-i18n="support.contactTitle">聯絡方式</h2>
       <dl class="blanks">
