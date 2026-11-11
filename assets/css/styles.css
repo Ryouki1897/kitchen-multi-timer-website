@@ -312,7 +312,7 @@ h2 {
   width: min(100%, 220px);
   aspect-ratio: 9 / 19.5;
   display: grid;
-  border: 2px dashed var(--line);
+  border: 1px solid var(--line);
   border-radius: 28px;
   overflow: hidden;
   background:
@@ -564,7 +564,7 @@ h2 {
   }
 
   .shots {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
 

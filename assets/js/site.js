@@ -5,6 +5,7 @@
   var STORAGE_KEY = "kitchen-multi-timer-language";
   var LANGUAGES = ["zh-Hant", "en", "ja"];
   var OG_LOCALE = { "zh-Hant": "zh_Hant", en: "en", ja: "ja" };
+  var SHOT_FOLDERS = { "zh-Hant": "zh-TW", en: "en", ja: "ja" };
 
   function packFor(lang) {
     var packs = window.KMT_I18N || {};
@@ -59,6 +60,17 @@
       for (var j = 0; j < labels.length; j++) {
         var label = textOf(pack, labels[j].getAttribute("data-i18n-aria"));
         if (label !== null) labels[j].setAttribute("aria-label", label);
+      }
+
+      var shotFolder = SHOT_FOLDERS[lang] || "zh-TW";
+      var shots = document.querySelectorAll("img[data-shot]");
+      for (var s = 0; s < shots.length; s++) {
+        var file = shots[s].getAttribute("data-shot");
+        if (!file) continue;
+        var nextSrc = "KitchenMultiTimer_WebP_Website/" + shotFolder + "/" + file;
+        if (shots[s].getAttribute("src") !== nextSrc) {
+          shots[s].setAttribute("src", nextSrc);
+        }
       }
 
       var buttons = document.querySelectorAll(".lang-switch [data-lang]");
